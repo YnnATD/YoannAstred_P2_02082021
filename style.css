@@ -1,0 +1,113 @@
+.bloc_page{
+    width: 1440px;
+    height: 1884px;
+}
+
+
+.body {
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .navbar {
+      width: 983px;
+      height: 72px;
+    display: flex; flex-direction: row;
+    justify-content: space-between ;
+    align-items: center;
+  }
+  .Reservia_logo_bloc{
+      margin-left: 54px;
+      margin-top: 52px;
+
+  }
+  .Reservia_logo{
+      width: 97px;
+      height: 45px;
+      
+  }
+  .Tab_nav {
+      width: 457px;
+      height: 72px;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+  .Blue_color_nav_bordure {
+      margin-top: 51px;
+      border-top: 2px solid #0065FC; padding: 30px;
+      color: #0065FC;
+  }
+  .Blue_color_decor{
+      padding: ;
+  }
+  .color_blue_decor {
+      color: #0065FC;
+      margin-left: 10px
+  }
+
+
+
+  .research-box {
+      display: flex; 
+      width: 420px;
+      height: 51px ;
+      padding: left 54px;
+
+  }
+  .icon-location {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 52px;
+      height: 51px;
+      background-color: #F2F2F2;
+      border-radius: 25% 0% 0% 25%;
+      
+  }
+  .fa-map-marker-alt{
+      display: inline-block;
+      width: 13px;
+      height: 18px;
+  }
+  .research-bar{
+      width: 230px;
+      height: 45px;    
+      border-top: solid 1px #F2F2F2;
+      border-bottom: solid 1px #F2F2F2;
+      border-left: none;
+  }
+  .button-research{
+      width: 134px;
+      height: 51px;
+      border-radius: 0px 20px 20px 0px;
+      background-color: #0065FC;
+      color: white;
+      cursor: pointer;
+      border: none;
+  }
+  .button-research:hover{
+      background-color:#003c94;
+      transition: background-color 0.3s
+    
+  }
+  ::-webkit-input-placeholder{
+    color: black;
+  }
+  .title-h2{
+      display: inline;
+      width: 53px;
+      height: 15px;
+  }
+  .Filters-ul {
+    display: inline-flex;
+    list-style: none;
+  }
+
+  .icon-filter {
+    background-color: #DEEBFF;
+    color: #0065fc;
+    padding: 18px;
+    border-radius: 200px;
+    margin-right: 15px;
+}
