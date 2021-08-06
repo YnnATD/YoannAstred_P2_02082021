@@ -1,6 +1,8 @@
 .bloc_page{
-    width: 1440px;
+    max-width: 1440px;
+    width: 98%;
     height: 1884px;
+    margin: auto;
 }
 
 
@@ -102,10 +104,23 @@
     display: inline-flex;
     justify-content: space-between;
     list-style: none;
+  
   }
+  .Filters-button{
+    border: solid 2px;
+    border-radius: 200px;      
+  }
+
   .info{
       display: flex;
       align-items: center;
+  }
+  .fa-info{
+    padding: 10px;
+    color: #0065fc;
+    border: solid 1px #D9D9D9;
+    border-radius: 50%;
+    margin-right: 20px
   }
 
   .icon-filter {
@@ -116,17 +131,28 @@
     margin-right: 15px;
 }
 .marseille-case-img{
-width: 236px;
+width: 246px;
 height: 114px;
+border-radius: 20px 20px 0 0;
+}
+.item_Most_popular{
+    width: 345px;
+    height: 499px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .Most_popular{
     width: 344px;
     height: 144px;
     display: flex;
+    background: white;
+    border-radius: 25px;
 }
 .Most_popular_img{
     width: 127px;
     height: 134px;
+    border-radius: 20px 0px 0px 20px;
 }
 .blocs {
     width: 1340px;
@@ -135,6 +161,7 @@ height: 114px;
     grid-template-columns: 2fr 1fr;
     column-gap: 40px;
 }
+
 .blocs_hebergement{
     width: 880px;
     height: 630px;
@@ -145,8 +172,9 @@ height: 114px;
 }
 .marseille-case-bloc{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, 246px);
     grid-gap: 27px;
+    justify-content: center;
 }
 .case-text{
     width: 246px;
@@ -157,23 +185,38 @@ height: 114px;
     height: 625px;
     display: flex;
     flex-direction: column;
+    background: #F2F2F2;
+    border-radius: 25px;
+    align-items: center;
 }
+
 .title_and_icon{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        width: 344px
     }
 }
 .marseille-case-bloc{
     width: 800px;
     height: 430px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr)
+    grid-template-columns: repeat(3, 1fr);
 }
 .marseille-case{
     width: 246px;
     height: 199px;
     background: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+.case-text{
+    display: flex;
+    flex-direction: column;
+    line-height: 1em;
+}
+.case-text-popular{
     display: flex;
     flex-direction: column;
 }
@@ -188,4 +231,18 @@ h4 {
 }
 a{
     text-decoration: none;
+}
+.show-more{
+    width: 107px;
+    height: 51px;
+    display: flex;
+    align-items: flex-end;
+}
+.Activities_img{
+    width: 302;
+    height: 445;
+}
+.Activity_img_1{
+    width: 302;
+    height: 445;
 }
