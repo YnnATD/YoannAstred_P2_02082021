@@ -107,7 +107,7 @@
   
   }
   .Filters-button{
-    border: solid 2px;
+    border: solid 2px #e2e2e2;;
     border-radius: 200px;      
   }
 
@@ -176,10 +176,6 @@ border-radius: 20px 20px 0 0;
     grid-gap: 27px;
     justify-content: center;
 }
-.case-text{
-    width: 246px;
-    height: 80px;
-}
 .bloc_most_popular{
     width: 420px;
     height: 625px;
@@ -204,8 +200,6 @@ border-radius: 20px 20px 0 0;
     grid-template-columns: repeat(3, 1fr);
 }
 .marseille-case{
-    width: 246px;
-    height: 199px;
     background: white;
     display: flex;
     flex-direction: column;
@@ -214,11 +208,11 @@ border-radius: 20px 20px 0 0;
 .case-text{
     display: flex;
     flex-direction: column;
-    line-height: 1em;
 }
 .case-text-popular{
     display: flex;
     flex-direction: column;
+    padding: 0px 0px 0px 21px;
 }
 h4 {
     display: block;
@@ -238,11 +232,75 @@ a{
     display: flex;
     align-items: flex-end;
 }
-.Activities_img{
-    width: 302;
-    height: 445;
+.marseille-activities{
+    width: 1440px;
+    height: 555px;
+}
+.bloc_marseille_activities{
+    width: 1330px;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+}
+.bloc_Activities{
+    box-shadow: 1px 1px 10px -7px;
+    border-radius: 20px 20px 20px 20px;
 }
 .Activity_img_1{
-    width: 302;
-    height: 445;
+    width: 300px;
+    height: 389px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+.Activity_img_2{
+    width: 303px;
+    height: 181px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+.Activity_img_3{
+    width: 304px;
+    height: 109px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+.Activity_img_5{
+    width: 303px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+.Activity_img_6{
+    width: 303px;
+    height: 153px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+.footer{
+    background-color: #F2F2F2;
+}
+.footer-blocs{
+    display: flex;
+}
+.footer-bloc{
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width:375px) {
+     .bloc_marseille_activities{
+         width: 335px;
+         height: 190px;
+         flex-direction: column;
+    }
+
+
+    .img_act{
+        width: 335px;
+        height: 133px;
+    }
+
+    .footer-blocs{
+        flex-direction: column;
+    }
+
 }
