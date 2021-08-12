@@ -85,6 +85,7 @@
       color: white;
       cursor: pointer;
       border: none;
+      font-size: initial
   }
   .button-research:hover{
       background-color:#003c94;
@@ -107,6 +108,15 @@
   .Filters-ul li{
     border: solid 2px #e2e2e2;;
     border-radius: 200px;  
+  }
+  .Filters-ul li:hover{
+    cursor: pointer;
+    background: #DEEBFF;
+    transition-duration: 0.25s;
+  }
+  .Filters-ul li:hover .icon-filter{
+    background: white;
+    transition-duration: 0.25s;
   }
   .filters-button-eco{
     padding-right: 25px;
@@ -156,8 +166,6 @@ height: 114px;
 border-radius: 20px 20px 0 0;
 }
 .item_Most_popular{
-    width: 345px;
-    height: 499px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -176,6 +184,7 @@ border-radius: 20px 20px 0 0;
     background: white;
     border-radius: 25px;
     border: 5px solid white;
+    box-shadow: 1px 1px 10px -7px;
 }
 .Most_popular_img{
     width: 127px;
@@ -206,8 +215,6 @@ border-radius: 20px 20px 0 0;
     justify-content: center;
 }
 .bloc_most_popular{
-    width: 420px;
-    height: 625px;
     display: flex;
     flex-direction: column;
     background: #F2F2F2;
@@ -231,19 +238,14 @@ border-radius: 20px 20px 0 0;
 .marseille-case{
     border: 5px solid white;
     background: white;
-    display: flex;
-    flex-direction: column;
     border-radius: 20px;
+    box-shadow: 1px 1px 10px -7px;
 }
 .case-text{
-    display: flex;
-    flex-direction: column;
     color: black;
     padding-left: 17px;
 }
 .case-text-popular{
-    display: flex;
-    flex-direction: column;
     color: black;
     padding: 0px 0px 0px 21px;
 }
@@ -346,22 +348,42 @@ a{
     display: flex;
     flex-direction: column;
 }
-@media (max-width:375px) {
-
-     .bloc_marseille_activities{
-         width: 335px;
-         height: 190px;
-         flex-direction: column;
+@media (max-width:1400px) {
+    .blocs {
+        display: flex;
+        flex-direction: column-reverse;
     }
-
-
-    .img_act{
-        width: 335px;
-        height: 133px;
+    .item_Most_popular{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 27px;
+        height: auto;
     }
+    .bloc_most_popular{
+        width: 100%;
+        height: 250px;
 
-    .footer-blocs{
-        flex-direction: column;
     }
+    .blocs_hebergement{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .marseille-case-bloc{
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .marseille-case{
 
+    }
+    .marseille-case-img{
+        width: 100%;
+        object-fit: cover;
+    }
+    .Most_popular{
+        width: 392px;
+    }
+    .title_and_icon{
+        width: auto;
+        align-self: normal;
+    }
 }
