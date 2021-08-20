@@ -273,7 +273,7 @@
 
 .case-text-popular {
     color: black;
-    padding: 0px 0px 0px 21px;
+    padding-left: 21px;
 }
 
 h4 {
@@ -377,7 +377,7 @@ h5 {
 }
 
 .footer-blocs {
-    width: 1026px;
+    width: auto;
     display: flex;
     justify-content: space-between;
 }
@@ -465,4 +465,125 @@ h5 {
     footer{
         margin-top: 200px;
     }
+}
+@media (max-width:992px){
+    header {
+        background-color: slateblue;
+    }
+    .Filters{
+        flex-direction: column;
+        align-items: normal;
+    }
+    .Filters-ul{
+        flex-wrap: wrap;
+        width: auto;
+        padding: 0px;
+    }
+    .item_Most_popular{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+        width: -webkit-fill-available    
+    }
+    .marseille-case-bloc{
+        grid-template-columns: 1fr 1fr;
+    }
+    .blocs_hebergement{
+        height: auto;
+    }
+    .bloc_marseille_activities{
+        grid-template-columns: 1fr 1fr;
+    }
+    footer{
+        margin-top: 500px
+    }
+}
+@media (max-width:576px){
+    header {
+        background-color: tomato;
+    }
+    .navbar{
+        height: auto;
+    }
+    .Reservia_logo_bloc{
+        margin-top: 0px;
+    }
+    .Tab_nav{
+        flex-direction: column;
+        width: auto;
+    }
+    .Filters{
+        flex-direction: column;
+    }
+    .Filters-ul{
+        flex-wrap: wrap;
+        width: auto;
+    }
+    .marseille-case-img{
+        height: 140px;
+    }
+    .Most_popular_img{
+        width: 170px;
+    }
+    .marseille-case-bloc{
+    grid-template-columns: 1fr;
+    }
+    .bloc_marseille_activities{
+        grid-template-columns: 1fr   
+    }
+    footer{
+        margin-top: 1500px;
+    }
+@media (max-width:375px){
+    header {
+        background-color: darkcyan;
+    }
+    .Tab_nav{
+        
+    }
+    .bloc_most_popular{
+        border-radius: 0
+    }
+    .blocs_hebergement{
+        background-color: white;
+    }
+    .Most_popular{
+        height: 145px;
+    }
+    .Most_popular_img{
+        width: 127px;
+    }
+    .marseille-case-img{
+        width: 325px;
+        height: 115px;
+    }
+    .bloc_marseille_activities{
+        justify-content: center;
+    }
+    .Activity_img_1{
+        width: 335px;
+        height: 135px;
+    }
+    .Activity_img_2{
+        width: 335px;
+        height: 135px;
+    }
+    .Activity_img_3{
+        width: 335px;
+        height: 135px;
+    }
+    .Activity_img_5{
+        width: 335px;
+        height: 135px;
+    }
+    .Activity_img_6{
+        width: 335px;
+        height: 135px;
+    }
+    footer{
+        margin-top:830px
+    }
+    .footer-blocs{
+        flex-direction: column;
+    }
+    
 }
