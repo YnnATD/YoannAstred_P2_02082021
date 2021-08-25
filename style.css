@@ -5,10 +5,9 @@
     margin: auto;
 }
 
-.body {
+body {
     font-family: 'Raleway', sans-serif;
 }
-
 .navbar {
     height: 72px;
     display: flex;
@@ -34,14 +33,38 @@
     align-items: center;
     justify-content: space-between;
 }
-
+.acomodation{
+    border-top: 3px solid white;
+    width: 163px;
+    text-align: center;
+    padding-top: 20px;
+    height: 50px;
+}
+.acomodation:hover{
+    border-top: 3px solid #0065FC;
+}
 .Blue_color_nav_bordure {
-    margin-top: 51px;
-    border-top: 2px solid #0065FC;
-    padding: 30px;
+    color:black;
+}
+.Blue_color_nav_bordure:hover {
     color: #0065FC;
 }
-
+.act-marseille{
+    color: black;
+}
+.act-marseille:hover{
+    color: #0065FC;
+}
+.loisir{
+    border-top: 3px solid white;
+    width: 163px;
+    text-align: center;
+    padding-top: 20px;
+    height: 50px;
+}
+.loisir:hover{
+    border-top: 3px solid #0065fc;
+}
 .sign-in {
     color: #0065FC;
     margin-left: 10px;
@@ -57,7 +80,7 @@
     justify-content: center;
     align-items: center;
     width: 52px;
-    height: 51px;
+    height: 49px;
     background-color: #F2F2F2;
     border-radius: 25% 0% 0% 25%;
 }
@@ -74,6 +97,7 @@
     border-top: solid 1px #F2F2F2;
     border-bottom: solid 1px #F2F2F2;
     border-left: none;
+    border-right: none;
 }
 
 .button-research {
@@ -91,9 +115,11 @@
     background-color: #003c94;
     transition: background-color 0.3s
 }
-
+.button-research.searchFormSubmitinputIcon.fas.fa-search{
+    display: none;
+}
 ::-webkit-input-placeholder {
-    color: black;
+    color:black;
 }
 
 .Filters {
@@ -186,11 +212,14 @@
     padding-bottom: 34px;
 }
 
-.stars {
+.stars_1 {
     font-size: small;
     color: #0065fc;
 }
-
+.stars_2{
+    font-size: small;
+    color: #0065fc;
+}
 .hostingMainCardGradeIconEmpty {
     color: #DEEBFF;
 }
@@ -273,7 +302,6 @@
 
 .case-text-popular {
     color: black;
-    padding-left: 21px;
 }
 
 h4 {
@@ -377,7 +405,7 @@ h5 {
 }
 
 .footer-blocs {
-    width: auto;
+    width: 1110px;
     display: flex;
     justify-content: space-between;
 }
@@ -387,6 +415,10 @@ h5 {
     flex-direction: column;
 }
 
+.footer-link{
+    margin-bottom: 10px;
+    color: black;
+}
 @media (max-width:1400px) {
     header {
         background-color: burlywood;
@@ -402,9 +434,6 @@ h5 {
         height: auto;
         margin: 0 35px;
     }
-    .bloc_most_popular {
-
-    }
     .blocs_hebergement {
         width: 100%;
         margin-top: 30px;
@@ -415,10 +444,12 @@ h5 {
         padding-right: 35px;
         padding-left: 35px;
     }
-    .marseille-case {}
     .marseille-case-img {
         width: 100%;
         object-fit: cover;
+    }
+    h4{
+        font-size: 1.1em;
     }
     .Most_popular {
         width: auto;
@@ -461,6 +492,9 @@ h5 {
     .Activity_img_6 {
         height: 250px;
         width: 100%;
+    }
+    .footer-blocs{
+        width: auto;
     }
     footer{
         margin-top: 200px;
@@ -512,14 +546,36 @@ h5 {
     }
     .acomodation{
         grid-row: 2;
+        border-bottom: 3px solid #D9D9D9;
+        border-top:none ;
+        width: 100%;
+        height: 30px;
+        padding-top: 0px;
+    }
+    .acomodation:hover{
+        border-top: none;
+        border-bottom: 3px solid #0065fc ;
     }
     .loisir{
         grid-column: 2;
         grid-row: 2;
         justify-self: center;
+        border-bottom: 3px solid #D9D9D9;
+        border-top:none ;
+        width: 100%;
+        height: 30px;
+        padding-top: 0px;
     }
+    .loisir:hover{
+        border-top: none;
+        border-bottom: 3px solid #0065fc ;
+    }
+
     .inscription{
         grid-column: 2;
+        justify-self: center;
+        padding-bottom: 20px;
+        padding-left: 75px;
     }
     .Reservia_logo_bloc{
         margin-top: 0px;
@@ -527,13 +583,21 @@ h5 {
         height: 12px;
     }
     .Blue_color_nav_bordure{
-        border-top: none;
-        border-bottom: 2px solid #0065FC;
-        padding-bottom: 13px;
         padding-left: 17px;
+        padding-top: 0px;
+        padding-bottom: 0px;
     }
     .sign-in{
         margin-left: 0px
+    }
+    .research-box{
+        justify-content: center;
+    }
+    .button-research{
+        display: none;
+    }
+    .button-research.searchFormSubmitinputIcon.fas.fa-search{
+        display: block;
     }
     .Filters{
         flex-direction: column;
@@ -546,13 +610,19 @@ h5 {
         height: 140px;
     }
     .Most_popular_img{
-        width: 170px;
+        width: 134px;
     }
     .marseille-case-bloc{
-    grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     }
     .bloc_marseille_activities{
         grid-template-columns: 1fr   
+    }
+    .footer-blocs{
+    flex-direction: column;
+    }
+    .footer{
+        height: 385px;
     }
     footer{
         margin-top: 1500px;
@@ -562,16 +632,98 @@ h5 {
         background-color: darkcyan;
     }
     .Tab_nav{
-        
+        padding-top: 10px;
+        margin-top: 0px;
+    }
+    .inscription{
+        padding-bottom: 20px;
+        padding-left: 90px;
+    }
+    .title-h1{
+        margin-bottom: 8px;
+    }
+    .subtitle{
+        margin-top: 0px;
+        margin-bottom: 25px;
+    }
+    .title-h2{
+        margin-bottom: 0px;
+    }
+    .Filters-ul{
+        margin-bottom: 10px;
+    }
+    .info{
+        margin-bottom: 10px;
+    }
+    .title_bloc{
+        margin-top: 0px;
+        margin-left: 18px;
+    }
+    .marseille-case-bloc{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .show-more{
+        padding-left: 0px;
+        margin-left: 20px;
+        margin-top: 35px;
+    }
+    .title_and_icon{
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .item_Most_popular{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .Most_popular {
+        height: 135px;
+    }
+    .Most_popular_img {
+        height: 134px;
+    }
+    .stars_2{
+        padding-top: 35px;
+    }
+    .hotel-name{
+        padding-top: 5px;
+    }
+    .hotel-price{
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    .stars_1{
+        padding-top: 5px;
+    }
+    .Activities-name{
+        padding-top: 10px;
+        height: 40px;
+    }
+    .title{
+        margin-left: 20px;
+    }
+    .research-box{
+        justify-content: center;
+    }
+    .button-research.searchFormSubmitinputIcon.fas.fa-search {
+        width: 51px;
+        border-radius: 20%;
+    }
+    .filters-button-rom{
+        margin-top: 13px;
+    }
+    .filters-button-ani{
+        margin-top: 13px;
+    }
+    h4{
+        font-size: 1.1em;
     }
     .bloc_most_popular{
         border-radius: 0
     }
     .blocs_hebergement{
         background-color: white;
-    }
-    .Most_popular{
-        height: 145px;
     }
     .Most_popular_img{
         width: 127px;
@@ -609,5 +761,4 @@ h5 {
     .footer-blocs{
         flex-direction: column;
     }
-    
 }
