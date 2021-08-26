@@ -37,8 +37,8 @@ body {
     border-top: 3px solid white;
     width: 163px;
     text-align: center;
-    padding-top: 20px;
-    height: 50px;
+    padding-top: 30px;
+    height: 55px;
 }
 .acomodation:hover{
     border-top: 3px solid #0065FC;
@@ -59,8 +59,8 @@ body {
     border-top: 3px solid white;
     width: 163px;
     text-align: center;
-    padding-top: 20px;
-    height: 50px;
+    padding-top: 30px;
+    height: 55px;
 }
 .loisir:hover{
     border-top: 3px solid #0065fc;
@@ -225,13 +225,15 @@ body {
 }
 
 .Most_popular {
-    width: 344px;
+    width: auto;
     height: 144px;
     display: flex;
     background: white;
     border-radius: 25px;
     border: 5px solid white;
     box-shadow: 1px 1px 10px -7px;
+    margin-right: 35px;
+    margin-left: 35px;
 }
 
 .Most_popular_img {
@@ -297,14 +299,16 @@ body {
     background: white;
     border-radius: 20px;
     box-shadow: 1px 1px 10px -7px;
+    width: fit-content;
 }
 
 .case-text {
     color: black;
-    padding-left: 17px;
+    padding-left: 10px;
 }
 
 .case-text-popular {
+    margin-left: 15px;
     color: black;
 }
 
@@ -334,11 +338,11 @@ a {
 }
 
 .marseille-activities {
-    height: 555px;
+    height: 535px;
 }
 
 .bloc_marseille_activities {
-    height: 445px;
+    height: 435px;
     display: grid;
     grid-gap: 43px;
     grid-template-columns: repeat(4,1fr);
@@ -406,13 +410,15 @@ h5 {
 
 .footer {
     background-color: #F2F2F2;
-    height: 325px;
+    height: 335px;
 }
 
 .footer-blocs {
     width: 1110px;
     display: flex;
     justify-content: space-between;
+    margin-left: 15px;
+    padding-top: 25px;
 }
 
 .footer-bloc {
@@ -457,6 +463,8 @@ h5 {
     }
     .Most_popular {
         width: auto;
+        margin: inherit;
+        padding: inherit;
     }
     .title_and_icon {
         width: auto;
@@ -610,6 +618,9 @@ h5 {
         flex-wrap: wrap;
         width: auto;
     }
+    .filters-button-ani{
+        margin-top: 10px;
+    }
     .marseille-case-img{
         height: 140px;
     }
@@ -626,7 +637,7 @@ h5 {
     flex-direction: column;
     }
     .footer{
-        height: 385px;
+        height: 410px;
     }
     footer{
         margin-top: 1500px;
@@ -760,7 +771,7 @@ h5 {
         height: 135px;
     }
     footer{
-        margin-top:830px
+        margin-top:890px
     }
     .footer-blocs{
         flex-direction: column;
