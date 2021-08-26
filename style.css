@@ -245,6 +245,10 @@ body {
     column-gap: 40px;
 }
 
+.hotel-price{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
 .price {
     color: black;
     font-weight: bold;
@@ -355,13 +359,14 @@ a {
     border-radius: 20px;
 }
 h5 {
-    height: 55px;
+    height: 35px;
     margin: 0px;
 }
 
 .Activities-name {
     padding-left: 17px;
     color: black;
+    margin-top: 15px;
 }
 
 .Activity_img_1 {
@@ -678,7 +683,7 @@ h5 {
         margin-left: 20px;
     }
     .Most_popular {
-        height: 135px;
+        height: auto;
     }
     .Most_popular_img {
         height: 134px;
