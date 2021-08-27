@@ -308,7 +308,7 @@ body {
 }
 
 .case-text-popular {
-    margin-left: 15px;
+    padding-left: 10px;
     color: black;
 }
 
@@ -370,7 +370,8 @@ h5 {
 .Activities-name {
     padding-left: 17px;
     color: black;
-    margin-top: 15px;
+    margin-top: 10px;
+    height: 30px;
 }
 
 .Activity_img_1 {
@@ -519,6 +520,19 @@ h5 {
     .Filters{
         flex-direction: column;
         align-items: normal;
+        margin-top: 0px;
+    }
+    .filters-button-eco{
+        margin-top: 5px;
+    }
+    .filters-button-fam{
+        margin-top: 5px;
+    }
+    .filters-button-ani{
+        margin-top: 5px;
+    }
+    .filters-button-rom{
+        margin-top: 5px;
     }
     .Filters-ul{
         flex-wrap: wrap;
@@ -617,9 +631,25 @@ h5 {
     .Filters-ul{
         flex-wrap: wrap;
         width: auto;
+        margin-top: 0px;
+    }
+    .Filters-ul li{
+        height: 50px;
+    }
+    .filters-button-eco{
+        margin-top: 5px;
+    }
+    .filters-button-fam{
+        margin-top: 5px;
     }
     .filters-button-ani{
-        margin-top: 10px;
+        margin-top: 5px;
+    }
+    .filters-button-rom{
+        margin-top: 5px;
+    }
+    .icon-filter{
+        margin-right: 3px;
     }
     .marseille-case-img{
         height: 140px;
@@ -744,7 +774,6 @@ h5 {
         width: 127px;
     }
     .marseille-case-img{
-        width: 325px;
         height: 115px;
     }
     .bloc_marseille_activities{
@@ -775,5 +804,55 @@ h5 {
     }
     .footer-blocs{
         flex-direction: column;
+    }
+@media (max-width:365px){
+    header {
+    background-color: gold;
+    }
+    .inscription{
+        padding-left: 0px;
+    }
+    .Most_popular{
+        flex-direction: column;
+    }
+    .Most_popular_img{
+        width: auto;
+        height: 80px;
+        border-radius: 20px 20px 0 0;
+    }
+    .item_Most_popular{
+        width: auto;
+    }
+    .stars_2{
+        padding-top: 10px;
+    }
+    .bloc_marseille_activities{
+        margin: 0 20px;
+    }
+    .marseille-case-img{
+        height: 80px;
+    }
+    .Activity_img_1{
+        width: 100%;
+        height: 80px;
+    }
+    .Activity_img_2{
+        width: 100%;
+        height: 80px;
+    }
+    .Activity_img_3{
+        width: 100%;
+        height: 80px;
+    }
+    .Activity_img_5{
+        width: 100%;
+        height: 80px;
+    }
+    .Activity_img_6{
+        width: 100%;
+        height: 80px;
+    }
+    footer{
+        margin-top: 535px;
     }
 }
