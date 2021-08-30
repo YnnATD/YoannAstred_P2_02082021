@@ -1,107 +1,867 @@
-.bloc_page{
-    width: 1440px;
+.bloc_page {
+    max-width: 1440px;
+    width: 98%;
     height: 1884px;
+    margin: auto;
 }
 
-
-.body {
+body {
     font-family: 'Raleway', sans-serif;
-  }
-
-  .navbar {
-      width: 983px;
-      height: 72px;
-    display: flex; flex-direction: row;
-    justify-content: space-between ;
+}
+.navbar {
+    height: 72px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-  }
-  .Reservia_logo_bloc{
-      margin-left: 54px;
-      margin-top: 52px;
+}
 
-  }
-  .Reservia_logo{
-      width: 97px;
-      height: 45px;
-      
-  }
-  .Tab_nav {
-      width: 457px;
-      height: 72px;
-    display: flex; 
+.Reservia_logo_bloc {
+    margin-top: 52px;
+}
+
+.Reservia_logo {
+    width: 97px;
+    height: 45px;
+    margin-bottom: 50px;
+}
+
+.Tab_nav {
+    width: 457px;
+    height: 72px;
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    
-  }
-  .Blue_color_nav_bordure {
-      margin-top: 51px;
-      border-top: 2px solid #0065FC; padding: 30px;
-      color: #0065FC;
-  }
-  .color_blue_decor {
-      color: #0065FC;
-      margin-left: 10px
-  }
-  .research-box {
-      display: flex; 
-      width: 420px;
-      height: 51px ;
-      padding: left 54px;
-
-  }
-  .icon-location {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 52px;
-      height: 51px;
-      background-color: #F2F2F2;
-      border-radius: 25% 0% 0% 25%;
-      
-  }
-  .fa-map-marker-alt{
-      display: inline-block;
-      width: 13px;
-      height: 18px;
-  }
-  .research-bar{
-      width: 230px;
-      height: 45px;    
-      border-top: solid 1px #F2F2F2;
-      border-bottom: solid 1px #F2F2F2;
-      border-left: none;
-  }
-  .button-research{
-      width: 134px;
-      height: 51px;
-      border-radius: 0px 20px 20px 0px;
-      background-color:#0065FC;
-      color: white;
-      cursor: pointer;
-      border: none;
-  }
-  .button-research:hover{
-      background-color:#003c94;
-      transition: background-color 0.3s
-    
-  }
-  ::-webkit-input-placeholder{
+}
+.acomodation{
+    border-top: 3px solid white;
+    width: 163px;
+    text-align: center;
+    padding-top: 30px;
+    height: 55px;
+}
+.acomodation:hover{
+    border-top: 3px solid #0065FC;
+}
+.Blue_color_nav_bordure {
+    color:black;
+}
+.Blue_color_nav_bordure:hover {
+    color: #0065FC;
+}
+.act-marseille{
     color: black;
-  }
-  .title-h2{
-      display: inline;
-      width: 53px;
-      height: 15px;
-  }
-  .Filters-ul {
-    display: inline-flex;
-    list-style: none;
-  }
+}
+.act-marseille:hover{
+    color: #0065FC;
+}
+.loisir{
+    border-top: 3px solid white;
+    width: 163px;
+    text-align: center;
+    padding-top: 30px;
+    height: 55px;
+}
+.loisir:hover{
+    border-top: 3px solid #0065fc;
+}
+.sign-in {
+    color: #0065FC;
+    margin-left: 10px;
+    font-weight: bold
+}
 
-  .icon-filter {
+.research-box {
+    display: flex;
+}
+
+.icon-location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 52px;
+    height: 49px;
+    background-color: #F2F2F2;
+    border-radius: 25% 0% 0% 25%;
+}
+
+.fa-map-marker-alt {
+    display: inline-block;
+    width: 13px;
+    height: 18px;
+}
+
+.research-bar {
+    width: 230px;
+    height: 45px;
+    border-top: solid 1px #F2F2F2;
+    border-bottom: solid 1px #F2F2F2;
+    border-left: none;
+    border-right: none;
+}
+
+.button-research {
+    width: 134px;
+    height: 51px;
+    border-radius: 0px 20px 20px 0px;
+    background-color: #0065FC;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: initial
+}
+
+.button-research:hover {
+    background-color: #003c94;
+    transition: background-color 0.3s
+}
+.button-research.searchFormSubmitinputIcon.fas.fa-search{
+    display: none;
+}
+::-webkit-input-placeholder {
+    color:black;
+}
+
+.Filters {
+    display: flex;
+    align-items: center;
+}
+
+.Filters-ul {
+    width: 847px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.Filters-ul li {
+    border: solid 2px #e2e2e2;
+    ;
+    border-radius: 200px;
+}
+
+.Filters-ul li:hover {
+    cursor: pointer;
+    background: #DEEBFF;
+    transition-duration: 0.25s;
+}
+
+.Filters-ul li:hover .icon-filter {
+    background: white;
+    transition-duration: 0.25s;
+}
+
+.filters-button-eco {
+    padding-right: 25px;
+}
+
+.filters-button-fam {
+    padding-right: 23px;
+}
+
+.filters-button-rom {
+    padding-right: 17px;
+}
+
+.filters-button-ani {
+    padding-right: 21px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.fa-info {
+    font-size: small;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #0065fc;
+    border: solid 1px #D9D9D9;
+    border-radius: 50%;
+    margin-right: 20px
+}
+
+.icon-filter {
     background-color: #DEEBFF;
     color: #0065fc;
     padding: 18px;
     border-radius: 200px;
     margin-right: 15px;
+}
+
+.title_bloc {
+    margin-top: 47px;
+    margin-left: 40px;
+    margin-bottom: 22px;
+}
+
+.marseille-case-img {
+    width: 236px;
+    height: 114px;
+    border-radius: 20px 20px 0 0;
+}
+
+.item_Most_popular {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding-bottom: 34px;
+}
+
+.stars_1 {
+    font-size: small;
+    color: #0065fc;
+}
+.stars_2{
+    font-size: small;
+    color: #0065fc;
+}
+.hostingMainCardGradeIconEmpty {
+    color: #DEEBFF;
+}
+
+.Most_popular {
+    width: auto;
+    height: 144px;
+    display: flex;
+    background: white;
+    border-radius: 25px;
+    border: 5px solid white;
+    box-shadow: 1px 1px 10px -7px;
+    margin-right: 35px;
+    margin-left: 35px;
+}
+
+.Most_popular_img {
+    width: 127px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.blocs {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 40px;
+}
+
+.hotel-price{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.price {
+    color: black;
+    font-weight: bold;
+}
+
+.blocs_hebergement {
+    width: 880px;
+    height: 630px;
+    background: #F2F2F2;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.marseille-case-bloc {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 246px);
+    grid-gap: 27px;
+    justify-content: center;
+}
+
+.bloc_most_popular {
+    display: flex;
+    flex-direction: column;
+    background: #F2F2F2;
+    border-radius: 25px;
+    align-items: center;
+}
+
+.title_and_icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 344px;
+    margin-top: 37px
+}
+
+.marseille-case-bloc {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-self: center;
+}
+
+.marseille-case {
+    border: 5px solid white;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px -7px;
+    width: fit-content;
+}
+
+.case-text {
+    color: black;
+    padding-left: 10px;
+}
+
+.case-text-popular {
+    padding-left: 10px;
+    color: black;
+}
+
+h4 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+.show-more {
+    margin-top: 40px;
+    padding-left: 40px;
+}
+
+.show-more a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.marseille-activities {
+    height: 535px;
+}
+
+.bloc_marseille_activities {
+    height: 435px;
+    display: grid;
+    grid-gap: 43px;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.bloc_Activities {
+    box-shadow: 1px 1px 10px -7px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.bloc_Activities_2 {
+    display: grid;
+    grid-gap: 42px;
+}
+
+.bloc_act {
+    box-shadow: 1px 1px 10px -7px;
+    border-radius: 20px;
+}
+h5 {
+    height: 35px;
+    margin: 0px;
+}
+
+.Activities-name {
+    padding-left: 17px;
+    color: black;
+    margin-top: 10px;
+    height: 30px;
+}
+
+.Activity_img_1 {
+    width: 100%;
+    height: 389px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.Activity_img_2 {
+    width: 100%;
+    height: 181px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.Activity_img_3 {
+    width: 100%;
+    height: 109px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.Activity_img_5 {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.Activity_img_6 {
+    width: 100%;
+    height: 153px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.footer {
+    background-color: #F2F2F2;
+    height: 335px;
+}
+
+.footer-blocs {
+    width: 1110px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+    padding-top: 25px;
+}
+
+.footer-bloc {
+    display: flex;
+    flex-direction: column;
+}
+.footer-link{
+    margin-bottom: 10px;
+    color: black;
+}
+@media (max-width:1400px) {
+    header {
+        background-color: burlywood;
+    }
+    .blocs {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .item_Most_popular {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 27px;
+        height: auto;
+        margin: 0 35px;
+    }
+    .blocs_hebergement {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .marseille-case-bloc {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(3,1fr);
+        padding-right: 35px;
+        padding-left: 35px;
+    }
+    .marseille-case-img {
+        width: 100%;
+        object-fit: cover;
+    }
+    h4{
+        font-size: 1.1em;
+    }
+    .Most_popular {
+        width: auto;
+        margin: inherit;
+        padding: inherit;
+    }
+    .title_and_icon {
+        width: auto;
+        align-self: normal;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+    .title{
+        margin-left: 40px;
+    }
+    .bloc_marseille_activities {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin: 0 35px;
+        grid-gap:27px
+    }
+    .bloc_Activities_2 {
+        display: contents;
+        ;
+    }
+    .Activity_img_1{
+        height: 250px;
+        width: 100%;
+    }
+    .Activity_img_2 {
+        height: 250px;
+        width: 100%;
+    }
+    .Activity_img_3 {
+        height: 250px;
+        width: 100%;
+    }
+    .Activity_img_5 {
+        height: 250px;
+        width: 100%;
+    }
+    .Activity_img_6 {
+        height: 250px;
+        width: 100%;
+    }
+    .footer-blocs{
+        width: auto;
+    }
+    footer{
+        margin-top: 200px;
+    }
+}
+@media (max-width:992px){
+    header {
+        background-color: slateblue;
+    }
+    .Filters{
+        flex-direction: column;
+        align-items: normal;
+        margin-top: 0px;
+    }
+    .filters-button-eco{
+        margin-top: 5px;
+    }
+    .filters-button-fam{
+        margin-top: 5px;
+    }
+    .filters-button-ani{
+        margin-top: 5px;
+    }
+    .filters-button-rom{
+        margin-top: 5px;
+    }
+    .Filters-ul{
+        flex-wrap: wrap;
+        width: auto;
+        padding: 0px;
+    }
+    .item_Most_popular{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+        width: -webkit-fill-available    
+    }
+    .marseille-case-bloc{
+        grid-template-columns: 1fr 1fr;
+    }
+    .blocs_hebergement{
+        height: auto;
+    }
+    .bloc_marseille_activities{
+        grid-template-columns: 1fr 1fr;
+    }
+    footer{
+        margin-top: 500px
+    }
+}
+@media (max-width:576px){
+    header {
+        background-color: tomato;
+    }
+    .navbar{
+        height: auto;
+        flex-direction: column;
+    }
+    .Tab_nav{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;    
+    }
+    .acomodation{
+        grid-row: 2;
+        border-bottom: 3px solid #D9D9D9;
+        border-top:none ;
+        width: 100%;
+        height: 30px;
+        padding-top: 0px;
+    }
+    .acomodation:hover{
+        border-top: none;
+        border-bottom: 3px solid #0065fc ;
+    }
+    .loisir{
+        grid-column: 2;
+        grid-row: 2;
+        justify-self: center;
+        border-bottom: 3px solid #D9D9D9;
+        border-top:none ;
+        width: 100%;
+        height: 30px;
+        padding-top: 0px;
+    }
+    .loisir:hover{
+        border-top: none;
+        border-bottom: 3px solid #0065fc ;
+    }
+
+    .inscription{
+        grid-column: 2;
+        justify-self: center;
+        padding-bottom: 20px;
+        padding-left: 75px;
+    }
+    .Reservia_logo_bloc{
+        margin-top: 0px;
+        align-self: start;
+        height: 12px;
+    }
+    .Blue_color_nav_bordure{
+        padding-left: 17px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .sign-in{
+        margin-left: 0px
+    }
+    .research-box{
+        justify-content: center;
+    }
+    .button-research{
+        display: none;
+    }
+    .button-research.searchFormSubmitinputIcon.fas.fa-search{
+        display: block;
+    }
+    .Filters{
+        flex-direction: column;
+    }
+    .Filters-ul{
+        flex-wrap: wrap;
+        width: auto;
+        margin-top: 0px;
+    }
+    .Filters-ul li{
+        height: 50px;
+    }
+    .filters-button-eco{
+        margin-top: 5px;
+    }
+    .filters-button-fam{
+        margin-top: 5px;
+    }
+    .filters-button-ani{
+        margin-top: 5px;
+    }
+    .filters-button-rom{
+        margin-top: 5px;
+    }
+    .icon-filter{
+        margin-right: 3px;
+    }
+    .marseille-case-img{
+        height: 140px;
+    }
+    .Most_popular_img{
+        width: 134px;
+    }
+    .marseille-case-bloc{
+        grid-template-columns: 1fr;
+    }
+    .bloc_marseille_activities{
+        grid-template-columns: 1fr   
+    }
+    .footer-blocs{
+    flex-direction: column;
+    }
+    .footer{
+        height: 410px;
+    }
+    footer{
+        margin-top: 1450px;
+    }
+@media (max-width:375px){
+    header {
+        background-color: darkcyan;
+    }
+    .Tab_nav{
+        padding-top: 10px;
+        margin-top: 0px;
+    }
+    .inscription{
+        padding-bottom: 20px;
+        padding-left: 90px;
+    }
+    .title-h1{
+        margin-bottom: 8px;
+    }
+    .subtitle{
+        margin-top: 0px;
+        margin-bottom: 25px;
+    }
+    .title-h2{
+        margin-bottom: 0px;
+    }
+    .Filters-ul{
+        margin-bottom: 10px;
+    }
+    .info{
+        margin-bottom: 10px;
+    }
+    .title_bloc{
+        margin-top: 0px;
+        margin-left: 18px;
+    }
+    .marseille-case-bloc{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .show-more{
+        padding-left: 0px;
+        margin-left: 20px;
+        margin-top: 35px;
+    }
+    .title_and_icon{
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .item_Most_popular{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .Most_popular {
+        height: auto;
+    }
+    .Most_popular_img {
+        height: 134px;
+    }
+    .stars_2{
+        padding-top: 35px;
+    }
+    .hotel-name{
+        padding-top: 5px;
+    }
+    .hotel-price{
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    .stars_1{
+        padding-top: 5px;
+    }
+    .Activities-name{
+        padding-top: 10px;
+        height: 40px;
+    }
+    .title{
+        margin-left: 20px;
+    }
+    .research-box{
+        justify-content: center;
+    }
+    .button-research.searchFormSubmitinputIcon.fas.fa-search {
+        width: 51px;
+        border-radius: 20%;
+    }
+    .filters-button-rom{
+        margin-top: 13px;
+    }
+    .filters-button-ani{
+        margin-top: 13px;
+    }
+    h4{
+        font-size: 1.1em;
+    }
+    .bloc_most_popular{
+        border-radius: 0
+    }
+    .blocs_hebergement{
+        background-color: white;
+    }
+    .Most_popular_img{
+        width: 127px;
+    }
+    .marseille-case-img{
+        height: 115px;
+    }
+    .bloc_marseille_activities{
+        justify-content: center;
+    }
+    .Activity_img_1{
+        width: 335px;
+        height: 135px;
+    }
+    .Activity_img_2{
+        width: 335px;
+        height: 135px;
+    }
+    .Activity_img_3{
+        width: 335px;
+        height: 135px;
+    }
+    .Activity_img_5{
+        width: 335px;
+        height: 135px;
+    }
+    .Activity_img_6{
+        width: 335px;
+        height: 135px;
+    }
+    footer{
+        margin-top:890px
+    }
+    .footer-blocs{
+        flex-direction: column;
+    }
+@media (max-width:365px){
+    header {
+    background-color: gold;
+    }
+    .inscription{
+        padding-left: 0px;
+    }
+    .Most_popular{
+        flex-direction: column;
+    }
+    .Most_popular_img{
+        width: auto;
+        height: 80px;
+        border-radius: 20px 20px 0 0;
+        image-rendering: pixelated;
+    }
+    .item_Most_popular{
+        width: auto;
+    }
+    .Filters-ul{
+        flex-direction: column;
+    }
+    .stars_2{
+        padding-top: 10px;
+    }
+    .bloc_marseille_activities{
+        margin: 0 20px;
+    }
+    .marseille-case-img{
+        height: 80px;
+        object-fit: fill;
+        image-rendering: pixelated;
+    }
+    .Activity_img_1{
+        width: 100%;
+        height: 80px;
+    }
+    .Activity_img_2{
+        width: 100%;
+        height: 80px;
+    }
+    .Activity_img_3{
+        width: 100%;
+        height: 80px;
+    }
+    .Activity_img_5{
+        width: 100%;
+        height: 80px;
+    }
+    .Activity_img_6{
+        width: 100%;
+        height: 80px;
+    }
+    .footer{
+        height: 430px;
+    }
+    footer{
+        margin-top: 535px;
+    }
 }
