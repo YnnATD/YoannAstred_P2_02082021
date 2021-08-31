@@ -202,6 +202,7 @@ body {
     width: 236px;
     height: 114px;
     border-radius: 20px 20px 0 0;
+    object-fit: cover;
 }
 
 .item_Most_popular {
@@ -219,6 +220,8 @@ body {
 .stars_2{
     font-size: small;
     color: #0065fc;
+    position: absolute;
+    top: 120px;
 }
 .hostingMainCardGradeIconEmpty {
     color: #DEEBFF;
@@ -234,11 +237,13 @@ body {
     box-shadow: 1px 1px 10px -7px;
     margin-right: 35px;
     margin-left: 35px;
+    position: relative;
 }
 
 .Most_popular_img {
     width: 127px;
     border-radius: 20px 0px 0px 20px;
+    object-fit: cover;
 }
 
 .blocs {
@@ -517,6 +522,9 @@ h5 {
     header {
         background-color: slateblue;
     }
+    body{
+        margin: 0px;
+    }
     .Filters{
         flex-direction: column;
         align-items: normal;
@@ -555,6 +563,10 @@ h5 {
     }
     footer{
         margin-top: 500px
+    }
+    .footer-blocs{
+        margin-left: 0px;
+        justify-content: space-around;
     }
 }
 @media (max-width:576px){
@@ -665,6 +677,7 @@ h5 {
     }
     .footer-blocs{
     flex-direction: column;
+    margin-left: 20px;
     }
     .footer{
         height: 410px;
@@ -730,6 +743,7 @@ h5 {
     }
     .stars_2{
         padding-top: 35px;
+        position: initial;
     }
     .hotel-name{
         padding-top: 5px;
@@ -826,6 +840,12 @@ h5 {
     }
     .Filters-ul{
         flex-direction: column;
+    }
+    .filters-button-rom{
+        margin-top: 5px;
+    }
+    .filters-button-ani{
+        margin-top: 5px;
     }
     .stars_2{
         padding-top: 10px;
