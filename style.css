@@ -436,9 +436,6 @@ h5 {
     color: black;
 }
 @media (max-width:1400px) {
-    header {
-        background-color: burlywood;
-    }
     .blocs {
         display: flex;
         flex-direction: column-reverse;
@@ -519,11 +516,13 @@ h5 {
     }
 }
 @media (max-width:992px){
-    header {
-        background-color: slateblue;
+
     }
     body{
         margin: 0px;
+    }
+    .Tab_nav{
+        margin-right: 20px;
     }
     .Filters{
         flex-direction: column;
@@ -570,8 +569,6 @@ h5 {
     }
 }
 @media (max-width:576px){
-    header {
-        background-color: tomato;
     }
     .navbar{
         height: auto;
@@ -608,7 +605,6 @@ h5 {
         border-top: none;
         border-bottom: 3px solid #0065fc ;
     }
-
     .inscription{
         grid-column: 2;
         justify-self: center;
@@ -651,9 +647,6 @@ h5 {
     .filters-button-eco{
         margin-top: 5px;
     }
-    .filters-button-fam{
-        margin-top: 5px;
-    }
     .filters-button-ani{
         margin-top: 5px;
     }
@@ -669,8 +662,14 @@ h5 {
     .Most_popular_img{
         width: 134px;
     }
+    .item_Most_popular{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
     .marseille-case-bloc{
         grid-template-columns: 1fr;
+        padding-right: 20px;
+        padding-left: 20px;
     }
     .bloc_marseille_activities{
         grid-template-columns: 1fr   
@@ -685,9 +684,8 @@ h5 {
     footer{
         margin-top: 1450px;
     }
+}
 @media (max-width:375px){
-    header {
-        background-color: darkcyan;
     }
     .Tab_nav{
         padding-top: 10px;
@@ -819,10 +817,8 @@ h5 {
     .footer-blocs{
         flex-direction: column;
     }
+}
 @media (max-width:365px){
-    header {
-    background-color: gold;
-    }
     .inscription{
         padding-left: 0px;
     }
